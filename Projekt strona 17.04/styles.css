@@ -144,6 +144,10 @@ nav ul  {
   header{
       display: none;
   }
+
+main{
+    margin-top: 100%;
+}
   
 
 .gallery-item {
