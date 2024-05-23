@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>produkty</title>
+    <style>
+        body{
+        
+            background-color: #537dbf;
+            
+        }
+        
+        .main{
+          width: 80%;
+          /* display: flex;
+          justify-content: center;
+          flex-direction: column; */
+          text-align: center;
+          margin-left: 10%
+        } 
+        
+        
+        
+        ul.sidenav {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          width: 25%;
+          background-color: #f1f1f1;
+          position: fixed;
+          height: 100%;
+          overflow: auto;
+          position: static;
+        }
+        
+        ul.sidenav li a {
+          display: block;
+          color: #000;
+          padding: 8px 16px;
+          text-decoration: none;
+        }
+         
+        ul.sidenav li a.active {
+          background-color: #4CAF50;
+          color: white;
+        }
+        
+        ul.sidenav li a:hover:not(.active) {
+          background-color: #555;
+          color: white;
+        }
+        
+        div.content {
+          margin-left: 25%;
+          padding: 1px 16px;
+          height: 400px;
+        }
+        
+        
+          ul.sidenav {
+            width: 100%;
+            height: auto;
+            position: relative;
+          }
+          
+          ul.sidenav li a {
+            float: left;
+            padding: 15px;
+          }
+          
+          div.content {margin-left: 0;}
+        
+        
+        @media screen and (max-width: 400px) {
+          ul.sidenav li a {
+            text-align: center;
+            float: none;
+          }}
+          
+          
+      table {
+        text-align: center;
+        height: 300px;
+        width: 600px;
+        margin: auto;
+        margin-top: 2em;
+        border: 1em solid;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+      }
+          
+
+
+      .slideshow { margin: 0px auto; max-width: 1920px; width: 100%; height: 450px; text-align: center; }
+
+.baner { position: absolute; padding-left: 0; width: 100%; height: 450px; top: 0; left: 0; right: 0; z-index: 0; }
+
+.baner li { list-style: none; }
+
+.baner li a { display: block; max-width: 1920px; width: 100%; height: 450px; position: absolute; z-index: 1; text-indent: -9999em; }
+
+.baner li span {
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+color: transparent;
+background-size: cover;
+background-position: 50% 50%;
+opacity: 0;
+z-index: 0;
+animation: imageAnimation 20s ease infinite 0s;
+}
+
+.baner li:nth-child(1) span {
+background-image : url(../images/baner/baner1.jpg);
+}
+
+.baner li:nth-child(2) span {
+background-image: url(../images/baner/baner2.jpg);
+animation-delay: 5s; 
+}
+
+.baner li:nth-child(3) span {
+background-image : url(../images/baner/baner3.jpg);
+animation-delay: 10s; 
+}
+
+.baner li:nth-child(4) span {
+background-image : url(../images/baner/baner4.jpg);
+animation-delay: 15s;
+}
+
+@keyframes imageAnimation { 
+0% { opacity: 0;}
+13% { opacity: 1;}
+25% { opacity: 1;}
+37% { opacity: 0;}
+100% { opacity: 0;}
+
+
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.slider {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.slides {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: .4; } 
+    to { opacity: 1; }
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+
+
+
+
+
+
+
+
+
+          </style>
+</head>
+<body>
+    <nav>  <ul class="sidenav">
+        <li><a  href="index.html">Home</a></li>
+       
+        <li><a class="active" href="contact.html">Prodkty</a></li>
+       
+        <li id="log"><a href="index3.html">Zaloguj</a></li>
+      </ul>
+      </nav>
+    
+
+    
+
+
+
+      <table border="4">
+        <tr>
+          <th>Nazwa</th>
+          <td>FEEDER JAXON ZAFFIRA</td>
+          <td>Jaxon Lekka Węglowa Bolonka Zaffira 500</td>
+          <td>Dragon Wędka ProGuide X-Series</td>
+          <td>Mikado Sensual Ng Ultra Light Spin</td>
+        </tr>
+        <tr>
+          <th>Cena</th>
+          <td>119,90 zł</td>
+          <td>87,90 zł</td>
+          <td>514,50 zł</td>
+          <td>94,99 zł</td>
+        </tr>
+        <tr>
+          <th>Długość</th>
+          <td>3,6m</td>
+          <td>5m</td>
+          <td>2,13m</td>
+          <td>2.35m</td>
+        </tr>
+        <tr>
+          <th>Waga</th>
+          <td>50-120g</td>
+          <td>15g</td>
+          <td>3-18g</td>
+          <td>2-14g</td>
+        </tr>
+      </table>
+
+      
+
+
+      <div class="slideshow">
+        <ul class="baner">
+        <li><span><a href="Bez nazwy.webp"></a></span></li>
+        <li><span><a href="Bez nazwy.png"></a></span></li>
+        <li><span><a href="Bez nazwy.png"></a></span></li>
+        <li><span><a href="Bez nazwy.png"></a></span></li>
+        </ul>
+        </div>
+        
+
+
+    <main>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide fade">
+                    <img src="images/photo1.jpg" alt="Opis zdjęcia 1">
+                </div>
+                <div class="slide fade">
+                    <img src="images/photo2.jpg" alt="Opis zdjęcia 2">
+                </div>
+                <div class="slide fade">
+                    <img src="images/photo3.jpg" alt="Opis zdjęcia 3">
+                </div>
+                <div class="slide fade">
+                    <img src="images/photo4.jpg" alt="Opis zdjęcia 4">
+                </div>
+                <div class="slide fade">
+                    <img src="images/photo5.jpg" alt="Opis zdjęcia 5">
+                </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Pokaz Zdjęć</p>
+    </footer>
+
+    <script src="slider.js"></script>
+
+
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    background-color: #537dbf;
+    font-size: 200%;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #87ceeb;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin: 0;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #c0edfe;
+  }
+  
+  .produkty {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 20px;
+    justify-content: space-around;
+  }
+  
+
+  .produkt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    width: 20%;
+    height: 28vh;
+    background-color: #87ceeb;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.5s, box-shadow 0.5s;
+  }
+  
+  .produkt:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .produkt img {
+    max-width: 100%;
+    border-radius: 5px;
+    width: 50%;
+  }
+  
+  .produkt p {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .produkt button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 50%;
+    height: 3vh;
+  }
+  
+  .produkt button:hover {
+    background-color: #555555;
+  }
+  .opinie {
+    padding: 20px;
+    text-align: center;
+}
+.opinie h2{
+  margin-bottom: 28px;
+}
+.listaOpini {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.opinia {
+  display: flex;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.opinia img {
+    border-radius: 50%;
+    border: solid 2px black;
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.opinia blockquote {
+display: flex;
+flex-direction: column;
+}
+
+.opinia cite {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555555;
+}
+
+.tematTekst{
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+  flex-basis: 46%;
+  margin: 15px;
+}
+.temat{
+  display: flex;
+   /* height: 500px;
+  width: 400px; */
+  margin: 4%;
+}
+.temat img{
+  flex-basis: 54%;
+ 
+}
+.tekstSrodek{
+  text-align: center;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+
+  .temat{
+    display: none;
+    width: 0px;
+    height: 0px;
+  }
+  .temat img{
+    display: none;
+   
+  }
+  
+  body{
+    background-color: chocolate;
+    margin-top: 60%;
+  }
+  
+
+  .produkt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    width: 40%;
+    height: 20vh;
+    background-color: #87ceeb;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.5s, box-shadow 0.5s;
+  }
+  
+
+  table{
+    font-size: 10px;
+  }
+
+  
+  .produkt img {
+    max-width: 100%;
+    border-radius: 5px;
+    width: 50%;
+  }
+  
+  .produkt p {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .produkt button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 50%;
+    height: 4vh;
+  }
+
+  nav ul  {
+    text-align: center;
+    float: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-left: 20%;
+  }
+  
+}
